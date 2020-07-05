@@ -2,9 +2,10 @@
 
 ans="/tmp/$$-ans"
 result="/tmp/$$result"
-msg="数字を設定してください"
+
+msg=15
 msg > ${ans}
-./maxcommon.sh aa bb > 
+./maxcommon.sh 465 360 > ${result}
 diff ${ans} ${result} || exit 1
 
 rm /tmp/$$-*
