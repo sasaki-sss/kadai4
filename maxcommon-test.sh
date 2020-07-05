@@ -1,10 +1,13 @@
 #!/bin/bash
 
-ans="/tmp/$$-ans"
 result="/tmp/$$result"
 
-15 > ${ans}
+ans=15
 ./maxcommon.sh 465 360 > ${result}
-diff ${ans} ${result} || exit 1
+if [ ${ans} -eq ${result} ] ; then
+	exit 0
+else
+	exit 1
+fi
 
 rm /tmp/$$-*
