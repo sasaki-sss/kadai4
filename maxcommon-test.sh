@@ -1,11 +1,10 @@
 #!/bin/bash
 
-tmp=/tmp/$$
-echo "input 2 argments" > $tmp-args
-echo "input natural number" > $tmp-nat
+ans="/tmp/$$-ans"
+result="/tmp/$$result"
+msg="数字を設定してください"
+msg > ${ans}
+./maxcommon.sh aa bb > 
+diff ${ans} ${result} || exit 1
 
-ERROR_EXIT () {
-	echo "$1" >&2
-	rm -f $tmp-*
-	exit 1
-}
+rm /tmp/$$-*
