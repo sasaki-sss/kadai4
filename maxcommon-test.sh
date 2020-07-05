@@ -4,7 +4,6 @@
 ans=15
 result=`sh maxcommon.sh 465 360`
 
-
 if [ ${ans} -eq ${result} ] ; then
 	echo "OK"
 	exit 0

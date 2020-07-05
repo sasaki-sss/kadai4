@@ -2,4 +2,6 @@ language: bash
 script:
 - echo Travis CI test in .travis.yml
 - ./maxcommon-test.sh
+- ./maxcommon-test-er1.sh
+- ./maxcommon-test-er2.sh
 

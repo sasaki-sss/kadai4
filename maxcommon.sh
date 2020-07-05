@@ -2,7 +2,7 @@
 
 # 入力値のチェック
 if [ $# != 2 ] ; then
-	echo "1つの数値を設定してください"
+	echo "引数を2つ設定してください"
 	exit 1
 else
 	expr $1 + 1 >/dev/null 2>&1
