@@ -2,8 +2,8 @@
 
 # 正常系のテストコード
 ans=15
-./maxcommon.sh 465 360
-result=$?
+result=`sh maxcommon.sh 465 360`
+
 
 if [ ${ans} -eq ${result} ] ; then
 	echo "OK"
